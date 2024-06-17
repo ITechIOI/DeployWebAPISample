@@ -18,7 +18,7 @@ const config = {
 
 app.use(bodyParser.json());
 
-app.all('/', (req, res) => {
+app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
@@ -35,7 +35,7 @@ app.all('/', (req, res) => {
 //   }
 // });
 
-app.post('/test-sql', async (req, res) => {
+app.all('/test-sql', async (req, res) => {
   try {
     console.log('Received query:', req.body.query);  // Logging câu truy vấn nhận được
     let pool = await sql.connect(config);
