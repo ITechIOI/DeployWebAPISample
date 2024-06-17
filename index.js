@@ -35,7 +35,7 @@ app.get('/', (req, res) => {
 //   }
 // });
 
-app.all('/test-sql', async (req, res) => {
+app.post('/test-sql', async (req, res) => {
   try {
     console.log('Received query:', req.body.query);  // Logging câu truy vấn nhận được
     let pool = await sql.connect(config);
