@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/cc34bbf1-3615-44d1-b70d-70d3157e007d/resourceGroups/DatabaseTimeManagement/providers/Microsoft.Web/sites/mediumWebAPI",
+    "appService.deploySubpath": "."
+}
