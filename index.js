@@ -13,7 +13,14 @@ const config = {
   options: {
     encrypt: true,
     trustServerCertificate: false
-  }
+  },
+  pool: {
+    max: 10, 
+    min: 0,  
+    idleTimeoutMillis: 30000
+  },
+  requestTimeout: 300000, 
+  connectionTimeout: 300000 
 };
 
 app.use(bodyParser.json());
