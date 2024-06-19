@@ -57,6 +57,8 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'mediumWebAPI'
-          slot-name: 'Production'
-          package: .
+          
+          # slot-name: 'Production'
+          package: ./TestAPI
+          
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A732B143F24E41FE9D9148858CA1FB19 }}

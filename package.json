@@ -4,8 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "echo 'Building project...' && npm run lint",
-    "lint": "eslint ."
   },
   "keywords": [],
   "author": "",
